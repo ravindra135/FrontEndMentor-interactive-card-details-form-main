@@ -14,49 +14,49 @@
   <div class="container">
     <div class="sidebar">
       <div class="cards-container">
-        <div class="card-front-mob">
+        <div id="card-front" class="card-front">
           <img id="card-logo" src="./images/card-logo.svg" alt="">
           <div class="card-info">
             <p id="card-num">9999 9999 9999 9999</p>
             <div class="info-block">
               <p id="card-owner">JANE APPLESEED</p>
-              <p id="card-exp">00/00</p>
+              <p id="card-exp"><span id="card-mm">00</span>/<span id="card-yy">00</span></p>
             </div>
           </div>
         </div>
-        <div class="card-back-mob">
+        <div id="card-back" class="card-back">
           <p id="cvc">000</p>
         </div>
       </div> 
     </div>
     <div class="main-content">
-      <div class="form-container">
-        <form action="">
+      <div id="form-container" class="form-container">
+        <div class="form">
           <div class="form-group">
             <label class="form-label" for="name">CARDHOLDER NAME</label>
-            <input class="form-input" type="text" name="name" placeholder="e.g. Jane Appleseed">
+            <input id="inCardName" class="form-input" type="text" name="name" placeholder="e.g. Jane Appleseed">
           </div>
           <div class="form-group">
             <label class="form-label" for="card-number">CARD NUMBER</label>
-            <input class="form-input" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
+            <input id="inCardNum" class="form-input" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
           </div>
           <div class="two-inputs">
             <div class="form-group">
               <label class="form-label" for="exp-date">EXP. DATE (MM/YY)</label>
               <div>
-                <input class="form-input form-inline right" type="text" name="exp-date" placeholder="MM">
-                <input class="form-input form-inline" type="text" name="exp-date" placeholder="YY">
+                <input id="inCardMM" class="form-input form-inline right" type="text" name="exp-date" placeholder="MM">
+                <input id="inCardYY" class="form-input form-inline" type="text" name="exp-date" placeholder="YY">
               </div>
             </div>
             <div class="form-group">
               <label class="form-label" for="cvc">CVC</label>
-              <input class="form-input form-ccv" type="text" name="cvc" placeholder="e.g. 123">
+              <input id="inCardCVC" class="form-input form-ccv" type="text" name="cvc" placeholder="e.g. 123">
             </div>
           </div>
-          <button type="submit" class="main-btn">Confirm</button>
-        </form>
+          <button id="form-btn" class="main-btn">Confirm</button>
+        </div>
       </div>
-      <div class="thanks-container">
+      <div id="thanks-container" class="thanks-container">
         <img id="thanks-img" src="./images/icon-complete.svg" alt="">
         <p id="thanks-main">thank you!</p>
         <p id="thanks-info">We've added your card details</p>

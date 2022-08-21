@@ -12,7 +12,7 @@
     --fs-xsmall: 13px;
     --fs-small: 15px;
     --fs-large: 18px;
-    --fs-xlarge: 34px;
+    --fs-xlarge: 26px;
 }
 
 * {
@@ -81,7 +81,7 @@ img#card-logo {
 }
 
 p#card-num {
-    font-size: 22px;
+    font-size: var(--fs-xlarge);
     letter-spacing: .12ch;
     font-weight: 500;
 }
@@ -117,20 +117,19 @@ p#cvc {
 /* Form Section */
 .form-container {
     width: 360px;
-    /* display: flex;  */
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 15px;
     margin: auto;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-form .form-group {
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -183,7 +182,8 @@ form .form-group {
 /* Thank You Container */
 .thanks-container {
     width: 360px;
-    display: flex;
+    /* Default set to None */
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
