@@ -111,10 +111,11 @@ p#cvc {
     margin-right: 4rem;
 }
 
-/* Form Fields */
+/* Form Section */
 .form-container {
     width: 360px;
-    display: flex;
+    /* display: flex;  */
+    display: none;
     flex-direction: column;
     padding: 15px;
     margin: auto;
@@ -165,12 +166,47 @@ form .form-group {
 }
 
 .main-btn {
+    width: 100%;
     padding: 12px;
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--color-veryDarkGreyishViolet);
     color: var(--color-white);
-    font-weight: 200;
-    letter-spacing: .1ch;
+    font-weight: 400;
+    letter-spacing: .13ch;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* Thank You Container */
+.thanks-container {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    background-color: red;
+}
+
+img#thanks-img {
+    width: 65px;
+}
+
+p#thanks-main {
+    margin-top: 1rem;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: .2ch;
+    font-weight: 500;
+}
+p#thanks-info {
+    margin-top: .5rem;
+    color: var(--color-darkGreyishViolet);
+    font-weight: 500;
+}
+
+button#thanks-btn {
+    margin-top: 3rem;
+    font-size: var(--fs-large);
 }
