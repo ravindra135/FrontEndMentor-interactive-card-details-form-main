@@ -66,6 +66,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    -webkit-box-shadow: 14px 25px 34px -21px rgba(0,0,0,0.48);
+    -moz-box-shadow: 14px 25px 34px -21px rgba(0,0,0,0.48);
+    box-shadow: 14px 25px 34px -21px rgba(0,0,0,0.48);
 }
 
 img#card-logo {
@@ -104,6 +108,9 @@ p#card-num {
     margin-left: calc(60%);
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 14px 25px 34px -21px rgba(0,0,0,0.48);
+    -moz-box-shadow: 14px 25px 34px -21px rgba(0,0,0,0.48);
+    box-shadow: 14px 25px 34px -21px rgba(0,0,0,0.48);
 }
 
 p#cvc {
