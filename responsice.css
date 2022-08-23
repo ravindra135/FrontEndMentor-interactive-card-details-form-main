@@ -8,9 +8,11 @@
         --fs-xlarge: 21px;
     }
 
-    /* .main-content {
+    /* 
+    .main-content {
         background-color: red;
-    } */
+    }
+    */
 
     /* Front Card */
     .card-front {
@@ -127,5 +129,12 @@
         position: relative;
         margin-left: 20%;
         display: flex;
+    }
+
+    .form-container {
+        margin-bottom: 2rem;
+    }
+    .thanks-container {
+        margin-bottom: 2rem;
     }
 }
