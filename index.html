@@ -34,26 +34,26 @@
         <div class="form">
           <div class="form-group">
             <label class="form-label" for="name">CARDHOLDER NAME</label>
-            <input id="inCardName" class="form-input" type="text" name="name" placeholder="e.g. Jane Appleseed">
+            <input id="inCardName" onkeyup="cardNameUpdate()"  class="form-input" type="text" name="name" placeholder="e.g. Jane Appleseed">
             <span class="validity" id="nameValid">Hello</span>
           </div>
           <div class="form-group">
             <label class="form-label" for="card-number">CARD NUMBER</label>
-            <input id="inCardNum" maxlength="16" class="form-input" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
+            <input id="inCardNum" onkeyup="cardNumUpdate()" maxlength="16" class="form-input" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
             <span class="validity" id="numValid">Hello</span>
           </div>
           <div class="two-inputs">
             <div class="form-group">
               <label class="form-label" for="exp-date">EXP. DATE (MM/YY)</label>
               <div>
-                <input id="inCardMM" min="01" max="12" maxlength="2" class="form-input form-inline right" type="text" name="exp-date" placeholder="MM">
-                <input id="inCardYY" maxlength="2" class="form-input form-inline" type="text" name="exp-date" placeholder="YY">
+                <input id="inCardMM" onkeyup="cardMMUpdate()" min="01" max="12" maxlength="2" class="form-input form-inline right" type="text" name="exp-date" placeholder="MM">
+                <input id="inCardYY" onkeyup="cardYYUpdate()" maxlength="2" class="form-input form-inline" type="text" name="exp-date" placeholder="YY">
                 <span class="validity" id="expValid">Hello</span>
               </div>
             </div>
             <div class="form-group">
               <label class="form-label" for="cvc">CVC</label>
-              <input id="inCardCVC" maxlength="3" class="form-input form-ccv" type="text" name="cvc" placeholder="e.g. 123">
+              <input id="inCardCVC" onkeyup="cardCVCUpdate()" maxlength="3" class="form-input form-ccv" type="text" name="cvc" placeholder="e.g. 123">
               <span class="validity" id="cvcValid">Hello</span>
             </div>
           </div>

@@ -154,19 +154,33 @@ function validateForm() {
 
 }
 
-
-function cardInfoSubmit() {
-    // console.log('Form btn clicked');
-
+//V.2 - Realtime Update;
+function cardNumUpdate() {
     // Code Snippet to add Space after 4 characters in Number;
     let dummy = cardNum.value;
     let numMod =dummy.match(/.{1,4}/g);
-    // End of Code Snippet
     card_num.innerHTML = numMod.join(' ');
+    // console.log(numMod.join(' '));
+}
+
+function cardNameUpdate() {
     card_owner.innerHTML = cardName.value;
+}
+
+function cardMMUpdate() {
     card_mm.innerHTML = cardMM.value;
+}
+
+function cardYYUpdate() {
     card_yy.innerHTML = cardYY.value;
+}
+
+function cardCVCUpdate() {
     card_cvc.innerHTML = cardCVC.value;
+}
+
+function cardInfoSubmit() {
+    // console.log('Form btn clicked');
 
     formCont.style.display="none";
     thanksCont.style.display="flex";
