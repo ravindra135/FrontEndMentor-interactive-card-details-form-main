@@ -167,6 +167,14 @@ p#cvc {
     max-width: 145px;
 }
 
+span.validity {
+    color: var(--color-red);
+    font-weight: 500;
+    font-size: var(--fs-small);
+    margin-left: 5px;
+    display: none;
+}
+
 .main-btn {
     width: 100%;
     padding: 12px;
